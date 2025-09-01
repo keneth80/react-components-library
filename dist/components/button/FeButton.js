@@ -1,4 +1,5 @@
-'use client';import { __makeTemplateObject, __rest, __assign } from 'D:\\kenneth\\00.dev\\02.prototype\\react-components-library-startermkdir\\node_modules\\tslib\\tslib.es6.js';
+'use client';
+                import { __makeTemplateObject, __rest, __assign } from 'D:\\kenneth\\00.dev\\02.prototype\\react-components-library-startermkdir\\node_modules\\tslib\\tslib.es6.js';
 import React from 'react';
 import styled from 'styled-components';
 import styles from './FeButton.module.css.js';

@@ -9,6 +9,8 @@
 
 /storybook-static
 
+/micro-dist
+
 # misc
 .DS_Store
 

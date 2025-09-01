@@ -2,9 +2,11 @@
     "extends": "./tsconfig.json",
     "compilerOptions": {
         "declaration": true,
-        "outDir": "./dist/types",
+        "outDir": "./micro-dist/types",
+        "declarationDir": "./micro-dist",
+        "sourceMap": false,
         "emitDeclarationOnly": true,
         "noEmit": false
     },
-    "include": ["src/index.ts"]
+    "include": ["src/index.ts", "./src/global.d.ts"]
 }
