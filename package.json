@@ -57,6 +57,9 @@
     "scripts": {
         "build": "rollup -c --bundleConfigAsCjs",
         "storybook": "storybook dev -p 6006",
-        "build-storybook": "storybook build"
+        "build-storybook": "storybook build",
+        "webpack-build": "npm-run-all webpack-build:types webpack-build:webpack",
+        "webpack-build:types": "tsc --project tsconfig.build.json",
+        "webpack-build:webpack": "webpack --mode production"
     }
 }
