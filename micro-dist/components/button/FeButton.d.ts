@@ -277,5 +277,5 @@ interface FeButtonProps {
     label: string;
     onClick?: () => void;
 }
-export declare const FeButton: ({ primary, size, backgroundColor, label, ...props }: FeButtonProps) => React.JSX.Element;
-export {};
+declare const FeButton: ({ primary, size, backgroundColor, label, ...props }: FeButtonProps) => React.JSX.Element;
+export default FeButton;

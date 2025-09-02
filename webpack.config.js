@@ -7,7 +7,7 @@ module.exports = (env, argv) => {
     return {
         entry: {
             // npm 패키지용 진입점 (별도로 번들링)
-            lib: path.resolve(__dirname, 'src/index.ts'),
+            lib: path.resolve(__dirname, './src/index.ts'),
         },
         mode: argv.mode,
         output: {
@@ -15,7 +15,7 @@ module.exports = (env, argv) => {
                 // main과 lib 번들 파일명 분리
                 return 'lib.js';
             },
-            path: path.resolve(__dirname, 'micro-dist'),
+            path: path.resolve(__dirname, './micro-dist'),
             publicPath: 'auto',
             libraryTarget: 'umd', // npm 패키지용 포맷
         },
@@ -24,8 +24,8 @@ module.exports = (env, argv) => {
         },
         devServer: isDevelopment
             ? {
-                  static: path.join(__dirname, 'micro-dist'),
-                  port: 3001,
+                  static: path.join(__dirname, './micro-dist'),
+                  port: 3300,
               }
             : undefined,
         module: {
@@ -46,13 +46,13 @@ module.exports = (env, argv) => {
         },
         plugins: [
             new Dotenv({
-                path: isDevelopment ? '../.env.development' : '../.env.production',
+                path: isDevelopment ? './.env.development' : './.env.production',
             }),
             new ModuleFederationPlugin({
                 name: 'zds',
                 filename: 'remoteEntry.js',
                 exposes: {
-                    './FeButton': '../src/components/button/FeButton.tsx',
+                    './FeButton': './src/components/button/FeButton.tsx',
                 },
                 shared: {
                     react: { singleton: true, requiredVersion: '18.2.0', eager: true },

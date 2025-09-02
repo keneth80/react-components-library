@@ -34,7 +34,7 @@ interface FeButtonProps {
 /**
  * Primary UI component for user interaction
  */
-export const FeButton = ({ primary = false, size = 'medium', backgroundColor, label, ...props }: FeButtonProps) => {
+const FeButton = ({ primary = false, size = 'medium', backgroundColor, label, ...props }: FeButtonProps) => {
     const mode = primary ? styles['storybook-button--primary'] : styles['storybook-button--secondary'];
 
     console.log('styles : ', styles['storybook-button']);
@@ -51,3 +51,5 @@ export const FeButton = ({ primary = false, size = 'medium', backgroundColor, la
         </Container>
     );
 };
+
+export default FeButton;

@@ -1,3 +1,3 @@
-import { FeButton } from './components/button/FeButton';
+import FeButton from './components/button/FeButton';
 
 export { FeButton };

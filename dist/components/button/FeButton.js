@@ -25,4 +25,4 @@ var FeButton = function (_a) {
 };
 var templateObject_1;
 
-export { Container, FeButton };
+export { Container, FeButton as default };

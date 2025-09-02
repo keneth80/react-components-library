@@ -1,2 +1,2 @@
 'use client';
-                export { FeButton } from './components/button/FeButton.js';
+                export { default as FeButton } from './components/button/FeButton.js';

@@ -2,7 +2,8 @@ import type { Meta, StoryObj } from '@storybook/react';
 
 // import { Button } from './Button';
 
-import { FeButton } from '../../dist/components/button/FeButton';
+// import { FeButton } from '../../dist/components/button/FeButton'; // 현재 에러남.
+import FeButton from '../../src/components/button/FeButton';
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta: any = {

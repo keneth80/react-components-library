@@ -2,10 +2,10 @@ const { ModuleFederationPlugin } = require('webpack').container;
 const path = require('path');
 
 module.exports = {
-    entry: path.resolve(__dirname, 'src/index.ts'),
+    entry: path.resolve(__dirname, './src/index.ts'),
     output: {
         filename: '[name].js',
-        path: path.resolve(__dirname, 'dist'),
+        path: path.resolve(__dirname, './micro-dist'),
         publicPath: 'auto',
     },
     resolve: {
@@ -29,10 +29,10 @@ module.exports = {
     },
     plugins: [
         new ModuleFederationPlugin({
-            name: 'designSystem',
+            name: 'zds',
             filename: 'remoteEntry.js',
             exposes: {
-                './FeButton': '../src/components/button/FeButton.tsx',
+                './FeButton': './src/components/button/FeButton.tsx',
             },
             shared: {
                 react: { singleton: true, requiredVersion: '18.2.0', eager: true },

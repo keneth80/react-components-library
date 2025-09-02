@@ -49,6 +49,7 @@
         "sass-loader": "^13.3.2",
         "storybook": "7.6.5",
         "style-loader": "^3.3.3",
+        "postcss-loader": "^8.0.0",
         "typescript": "^5.3.3",
         "typescript-plugin-css-modules": "^5.2.0",
         "webpack": "^5.89.0",
@@ -65,8 +66,9 @@
         "build": "rollup -c --bundleConfigAsCjs",
         "storybook": "storybook dev -p 6006",
         "build-storybook": "storybook build",
+        "webpack-start": "webpack serve --config webpack.config.js --mode development",
         "webpack-build": "npm-run-all webpack-build:types webpack-build:webpack",
         "webpack-build:types": "tsc --project tsconfig.build.json",
-        "webpack-build:webpack": "webpack --config webpack-config/webpack.config.js --mode production"
+        "webpack-build:webpack": "webpack --config webpack.config.js --mode production"
     }
 }
