@@ -8,7 +8,7 @@ export const Container = styled.div`
     padding: 10px;
 `;
 
-interface FeButtonProps {
+export interface FeButtonProps {
     /**
      * Is this the principal call to action on the page?
      */

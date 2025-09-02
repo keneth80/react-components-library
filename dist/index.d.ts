@@ -1,2 +1,2 @@
-import FeButton from './components/button/FeButton';
-export { FeButton };
+import FeButton, { FeButtonProps } from './components/button/FeButton';
+export { FeButton, FeButtonProps };

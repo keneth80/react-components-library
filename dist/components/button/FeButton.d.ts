@@ -270,12 +270,12 @@ export declare const Container: import("styled-components").IStyledComponent<"we
     onTransitionEnd?: React.TransitionEventHandler<HTMLDivElement> | undefined;
     onTransitionEndCapture?: React.TransitionEventHandler<HTMLDivElement> | undefined;
 }>;
-interface FeButtonProps {
+export interface FeButtonProps {
     primary?: boolean;
     backgroundColor?: string;
     size?: 'small' | 'medium' | 'large';
     label: string;
     onClick?: () => void;
 }
-export declare const FeButton: ({ primary, size, backgroundColor, label, ...props }: FeButtonProps) => React.JSX.Element;
-export {};
+declare const FeButton: ({ primary, size, backgroundColor, label, ...props }: FeButtonProps) => React.JSX.Element;
+export default FeButton;
