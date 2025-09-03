@@ -7,6 +7,11 @@
   [headers.values]
     Content-Type = "application/javascript"
 
+[[redirects]]
+  from = "/storybook/mf/*"
+  to = "/storybook/mf/:splat"
+  status = 200
+
 # Storybook을 별도 경로로 라우팅
 [[redirects]]
   from = "/storybook/*"
