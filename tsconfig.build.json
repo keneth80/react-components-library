@@ -2,8 +2,8 @@
     "extends": "./tsconfig.json",
     "compilerOptions": {
         "declaration": true,
-        "outDir": "./dist/remoteapp/types",
-        "declarationDir": "./dist/remoteapp",
+        "outDir": "./dist/storybook/mf/types",
+        "declarationDir": "./dist/storybook/mf",
         "sourceMap": false,
         "emitDeclarationOnly": true,
         "noEmit": false
