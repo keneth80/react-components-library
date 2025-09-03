@@ -2,16 +2,15 @@
   command = "yarn build:all"
   publish = "dist" # 기본 React 앱 경로
 
+[[headers]]
+  for = "/micro/*.js"
+  [headers.values]
+    Content-Type = "application/javascript"
+
 # Storybook을 별도 경로로 라우팅
 [[redirects]]
   from = "/storybook/*"
   to = "/storybook/:splat"
-  status = 200
-
-# micro front remoteEntry 별도 경로로 라우팅
-[[redirects]]
-  from = "/micro/*"
-  to = "/micro/:splat"
   status = 200
 
 [[redirects]]
