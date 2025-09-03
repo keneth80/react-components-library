@@ -2,8 +2,8 @@
     "extends": "./tsconfig.json",
     "compilerOptions": {
         "declaration": true,
-        "outDir": "./dist/types",
-        "declarationDir": "./dist",
+        "outDir": "./dist/remoteapp/types",
+        "declarationDir": "./dist/remoteapp",
         "sourceMap": false,
         "emitDeclarationOnly": true,
         "noEmit": false

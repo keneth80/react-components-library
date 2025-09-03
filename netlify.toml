@@ -13,12 +13,6 @@
   to = "/storybook/:splat"
   status = 200
 
-# Micro Front 정적 파일
-[[redirects]]
-  from = "/mf/*"
-  to = "/mf/:splat"
-  status = 200
-
 [[redirects]]
   from = "/*"
   to = "/index.html"
