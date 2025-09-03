@@ -13,6 +13,12 @@
   to = "/storybook/:splat"
   status = 200
 
+# micro front remoteEntry 별도 경로로 라우팅
+[[redirects]]
+  from = "/micro/*"
+  to = "/micro/:splat"
+  status = 200
+
 [[redirects]]
   from = "/*"
   to = "/index.html"
