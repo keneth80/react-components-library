@@ -270,7 +270,7 @@ export declare const Container: import("styled-components").IStyledComponent<"we
     onTransitionEnd?: React.TransitionEventHandler<HTMLDivElement> | undefined;
     onTransitionEndCapture?: React.TransitionEventHandler<HTMLDivElement> | undefined;
 }>;
-interface FeButtonProps {
+export interface FeButtonProps {
     primary?: boolean;
     backgroundColor?: string;
     size?: 'small' | 'medium' | 'large';

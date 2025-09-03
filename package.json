@@ -66,10 +66,11 @@
         "build": "rollup -c --bundleConfigAsCjs",
         "storybook": "storybook dev -p 6006",
         "storybook:build": "storybook build",
-        "build:all": "yarn build && yarn storybook:build && cp -r storybook-static dist/storybook",
-        "webpack-start": "webpack serve --config webpack.config.js --mode development",
-        "webpack-build": "npm-run-all webpack-build:types webpack-build:webpack",
+        "storybook:build:all": "yarn build && yarn storybook:build && cp -r storybook-static dist/storybook",    
+        "webpack-start": "webpack serve --config webpack.config.js --mode development",        
         "webpack-build:types": "tsc --project tsconfig.build.json",
-        "webpack-build:webpack": "webpack --config webpack.config.js --mode production"
+        "webpack-build:webpack": "webpack --config webpack.config.js --mode production",
+        "webpack-build:all": "npm-run-all webpack-build:types webpack-build:webpack",        
+        "build:all": "yarn build && yarn storybook:build && cp -r storybook-static dist/storybook && npm-run-all webpack-build:types webpack-build:webpack"
     }
 }

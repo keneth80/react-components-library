@@ -2,8 +2,8 @@
     "extends": "./tsconfig.json",
     "compilerOptions": {
         "declaration": true,
-        "outDir": "./micro-dist/types",
-        "declarationDir": "./micro-dist",
+        "outDir": "./dist/micro/types",
+        "declarationDir": "./dist/micro",
         "sourceMap": false,
         "emitDeclarationOnly": true,
         "noEmit": false
