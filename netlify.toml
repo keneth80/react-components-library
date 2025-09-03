@@ -29,7 +29,7 @@
 
 [[redirects]]
   from = "/*"
-  to = "/test.html"
+  to = "/index.html"
   status = 200
 
 [[headers]]
