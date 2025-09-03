@@ -5,7 +5,7 @@ module.exports = {
     entry: path.resolve(__dirname, './src/index.ts'),
     output: {
         filename: '[name].js',
-        path: path.resolve(__dirname, './dist/storybook/mf'),
+        path: path.resolve(__dirname, './dist/mf'),
         publicPath: 'auto',
     },
     resolve: {

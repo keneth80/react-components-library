@@ -15,8 +15,7 @@ module.exports = (env, argv) => {
                 // main과 lib 번들 파일명 분리
                 return 'lib.js';
             },
-            path: path.resolve(__dirname, './dist/storybook/mf'),
-            publicPath: 'auto',
+            path: path.resolve(__dirname, './dist/mf'),
             libraryTarget: 'umd', // npm 패키지용 포맷
         },
         resolve: {
@@ -24,7 +23,7 @@ module.exports = (env, argv) => {
         },
         devServer: isDevelopment
             ? {
-                  static: path.join(__dirname, './dist/storybook/mf'),
+                  static: path.join(__dirname, './dist/mf'),
                   port: 3300,
               }
             : undefined,

@@ -70,7 +70,7 @@
         "webpack-start": "webpack serve --config webpack.config.js --mode development",        
         "webpack-build:types": "tsc --project tsconfig.build.json",
         "webpack-build:webpack": "webpack --config webpack.config.js --mode production",
-        "webpack-build:all": "npm-run-all webpack-build:types webpack-build:webpack",        
-        "build:all": "yarn build && yarn storybook:build && cp -r storybook-static dist/storybook && yarn webpack-build:types && yarn webpack-build:webpack"
+        "webpack-build:all": "yarn webpack-build:types && yarn webpack-build:webpack",        
+        "build:all": "yarn build && yarn storybook:build && cp -r storybook-static dist/storybook && yarn webpack-build:types && yarn webpack-build:webpack && cp -r dist/mf/* dist/storybook/mf/ && ls -la dist/storybook/mf/"
     }
 }
