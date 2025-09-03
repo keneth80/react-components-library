@@ -5,7 +5,7 @@ module.exports = {
     entry: path.resolve(__dirname, './src/index.ts'),
     output: {
         filename: '[name].js',
-        path: path.resolve(__dirname, './dist'),
+        path: path.resolve(__dirname, './dist/mf'),
         publicPath: 'auto',
     },
     resolve: {
@@ -30,7 +30,7 @@ module.exports = {
     plugins: [
         new ModuleFederationPlugin({
             name: 'zds',
-            filename: 'remoteEntry.js',
+            filename: 'rmfbundle.js',
             exposes: {
                 './FeButton': './src/components/button/FeButton.tsx',
             },
