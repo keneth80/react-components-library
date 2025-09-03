@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MF Test</title>
+</head>
+<body>
+    <h1>Testing Module Federation</h1>
+    <script>
+        fetch('/storybook/mf/remoteentry.js')
+            .then(response => {
+                console.log('Status:', response.status);
+                console.log('Headers:', response.headers);
+                return response.text();
+            })
+            .then(data => {
+                console.log('File loaded successfully');
+                console.log('File size:', data.length);
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+    </script>
+</body>
+</html>
