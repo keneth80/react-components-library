@@ -13,7 +13,7 @@
   to = "/storybook/:splat"
   status = 200
 
-# micro front remoteEntry 별도 경로로 라우팅
+# Micro Front 정적 파일
 [[redirects]]
   from = "/mf/*"
   to = "/mf/:splat"

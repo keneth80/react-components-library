@@ -50,7 +50,7 @@ module.exports = (env, argv) => {
             }),
             new ModuleFederationPlugin({
                 name: 'zds',
-                filename: 'rmfbundle.js',
+                filename: 'remoteEntry.js',
                 exposes: {
                     './FeButton': './src/components/button/FeButton.tsx',
                 },
