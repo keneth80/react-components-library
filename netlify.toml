@@ -2,6 +2,19 @@
   command = "yarn build:all"
   publish = "dist" # 기본 React 앱 경로
 
+# Webpack 생성 파일들에 대한 MIME Type 설정
+[[headers]]
+  for = "/storybook/mf/*.js"
+  [headers.values]
+    Content-Type = "application/javascript; charset=utf-8"
+    Access-Control-Allow-Origin = "*"
+
+[[headers]]
+  for = "/storybook/mf/remoteentry.js"
+  [headers.values]
+    Content-Type = "application/javascript; charset=utf-8"
+    Access-Control-Allow-Origin = "*"
+
 [[redirects]]
   from = "/storybook/mf/*"
   to = "/storybook/mf/:splat"
@@ -14,12 +27,10 @@
   to = "/storybook/:splat"
   status = 200
 
-# 정적 파일 헤더 설정
-[[headers]]
-  for = "/storybook/mf/*"
-  [headers.values]
-    Cache-Control = "public, max-age=3600"
-    Content-Type = "application/javascript"
+[[redirects]]
+  from = "/*"
+  to = "/test.html"
+  status = 200
 
 [[headers]]
   for = "*.js"

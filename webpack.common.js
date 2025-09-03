@@ -6,7 +6,7 @@ module.exports = {
     output: {
         filename: '[name].js',
         path: path.resolve(__dirname, './dist/mf'),
-        publicPath: "/storybook/mf/", // 최종 배포 경로와 일치
+        publicPath: "auto", // 최종 배포 경로와 일치
         clean: true,
     },
     resolve: {

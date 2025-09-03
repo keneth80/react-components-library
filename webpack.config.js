@@ -16,7 +16,7 @@ module.exports = (env, argv) => {
                 return 'lib.js';
             },
             path: path.resolve(__dirname, './dist/mf'),
-            publicPath: "/storybook/mf/", // 최종 배포 경로와 일치
+            publicPath: "./",
             libraryTarget: 'umd', // npm 패키지용 포맷
             clean: true,
         },
