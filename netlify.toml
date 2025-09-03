@@ -1,5 +1,5 @@
 [build]
-  command = "yarn build:all"
+  command = "yarn storybook:build:all"
   publish = "dist" # 기본 React 앱 경로
 
 # Webpack 생성 파일들에 대한 MIME Type 설정
@@ -15,6 +15,12 @@
     Content-Type = "application/javascript; charset=utf-8"
     Access-Control-Allow-Origin = "*"
 
+# 정적 파일 먼저 처리
+[[redirects]]
+  from = "/index.html"
+  to = "/index.html"
+  status = 200
+
 [[redirects]]
   from = "/storybook/mf/*"
   to = "/storybook/mf/:splat"
@@ -26,9 +32,10 @@
   from = "/storybook/*"
   to = "/storybook/:splat"
   status = 200
+  force = true
 
 [[redirects]]
-  from = "/*"
+  from = "/"
   to = "/index.html"
   status = 200
 
