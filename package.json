@@ -71,6 +71,6 @@
         "webpack-build:types": "tsc --project tsconfig.build.json",
         "webpack-build:webpack": "webpack --config webpack.config.js --mode production",
         "webpack-build:all": "npm-run-all webpack-build:types webpack-build:webpack",        
-        "build:all": "yarn build && yarn storybook:build && cp -r storybook-static dist/storybook && npm-run-all webpack-build:types webpack-build:webpack"
+        "build:all": "yarn build && yarn storybook:build && cp -r storybook-static dist/storybook && yarn webpack-build:types && yarn webpack-build:webpack"
     }
 }
