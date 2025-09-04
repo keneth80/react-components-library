@@ -2,6 +2,10 @@
   command = "yarn storybook:build:all"
   publish = "dist" # 기본 React 앱 경로
 
+[build.environment]
+  NODE_VERSION = "18"
+  NPM_CONFIG_LEGACY_PEER_DEPS = "true"
+
 # Webpack 생성 파일들에 대한 MIME Type 설정
 [[headers]]
   for = "/storybook/mf/*.js"

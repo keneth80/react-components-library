@@ -7,7 +7,6 @@ module.exports = {
         filename: '[name].js',
         path: path.resolve(__dirname, './dist/mf'),
         publicPath: "auto", // 최종 배포 경로와 일치
-        clean: true,
     },
     resolve: {
         extensions: ['.jsx', '.js', '.tsx', '.ts', '.css'],

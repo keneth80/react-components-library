@@ -16,9 +16,7 @@ module.exports = (env, argv) => {
                 return 'lib.js';
             },
             path: path.resolve(__dirname, './dist/mf'),
-            publicPath: "./",
             libraryTarget: 'umd', // npm 패키지용 포맷
-            clean: true,
         },
         resolve: {
             extensions: ['.jsx', '.js', '.tsx', '.ts', '.css'],
