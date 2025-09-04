@@ -8,13 +8,13 @@
 
 # Webpack 생성 파일들에 대한 MIME Type 설정
 [[headers]]
-  for = "/storybook/mf/*.js"
+  for = "/mf/*.js"
   [headers.values]
     Content-Type = "application/javascript; charset=utf-8"
     Access-Control-Allow-Origin = "*"
 
 [[headers]]
-  for = "/storybook/mf/remoteentry.js"
+  for = "/mf/remoteentry.js"
   [headers.values]
     Content-Type = "application/javascript; charset=utf-8"
     Access-Control-Allow-Origin = "*"
@@ -26,8 +26,8 @@
   status = 200
 
 [[redirects]]
-  from = "/storybook/mf/*"
-  to = "/storybook/mf/:splat"
+  from = "/mf/*"
+  to = "/mf/:splat"
   status = 200
   force = true
 
