@@ -70,7 +70,8 @@
         "webpack-start": "webpack serve --config webpack.config.js --mode development",        
         "webpack-build:types": "tsc --project tsconfig.build.json",
         "webpack-build:webpack": "webpack --config webpack.config.js --mode production",
-        "webpack-build:all": "yarn webpack-build:types && yarn webpack-build:webpack",        
-        "build:all": "yarn build && yarn storybook:build && cp -r storybook-static dist/storybook && yarn webpack-build:types && yarn webpack-build:webpack && cp -r dist/mf/* dist/storybook/static/mfjs/ && ls -la dist/storybook/static/mfjs/ && cd dist/storybook/static/mfjs"
+        "webpack-build:all": "yarn webpack-build:types && yarn webpack-build:webpack",
+        "mkdir:dirs": "mkdir -p dist/storybook/mfjs",     
+        "build:all": "yarn build && yarn storybook:build && cp -r storybook-static dist/storybook && yarn webpack-build:types && yarn webpack-build:webpack && cp -r dist/mf/* dist/storybook/static/"
     }
 }
