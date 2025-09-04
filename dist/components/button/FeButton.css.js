@@ -1,4 +1,0 @@
-'use client';import styleInject from 'style-inject';
-
-var css_248z = ".FeButton_storybook-button__snVwl {\n  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;\n  font-weight: 700;\n  border: 0;\n  border-radius: 3em;\n  cursor: pointer;\n  display: inline-block;\n  line-height: 1;\n}\n.FeButton_storybook-button--primary__VMLNL {\n  color: white;\n  background-color: #1ea7fd;\n}\n.FeButton_storybook-button--secondary__ddP5C {\n  color: #333;\n  background-color: transparent;\n  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;\n}\n.FeButton_storybook-button--small__C8TDc {\n  font-size: 12px;\n  padding: 10px 16px;\n}\n.FeButton_storybook-button--medium__PKu1x {\n  font-size: 14px;\n  padding: 11px 20px;\n}\n.FeButton_storybook-button--large__5SENZ {\n  font-size: 16px;\n  padding: 12px 24px;\n}\n";
-styleInject(css_248z);
