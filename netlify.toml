@@ -1,5 +1,5 @@
 [build]
-  command = "yarn storybook:build:all"
+  command = "yarn build:all"
   publish = "dist" # 기본 React 앱 경로
 
 [build.environment]
